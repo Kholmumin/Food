@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCollectionViewCell" customModule="Food" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="399"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="454" height="399"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRE-1E-2xt">
+                        <rect key="frame" x="0.0" y="51" width="449" height="348"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="nkO-D3-HCI">
+                                <rect key="frame" x="40" y="-50" width="369" height="368.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nkO-D3-HCI" secondAttribute="height" multiplier="1:1" id="pb1-f1-Rez"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ly2-NQ-og7">
+                                <rect key="frame" x="30" y="246" width="389" height="62"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Veggie tomato mix" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUc-hQ-RqR">
+                                        <rect key="frame" x="99.5" y="0.0" width="190.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N1,900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmP-b2-XAw">
+                                        <rect key="frame" x="165" y="41.5" width="59" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.98039215686274506" green="0.29019607843137252" blue="0.047058823529411764" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ly2-NQ-og7" secondAttribute="bottom" constant="40" id="2hk-iY-U6e"/>
+                            <constraint firstAttribute="trailing" secondItem="ly2-NQ-og7" secondAttribute="trailing" constant="30" id="3sq-Gs-nH9"/>
+                            <constraint firstItem="nkO-D3-HCI" firstAttribute="width" secondItem="zRE-1E-2xt" secondAttribute="width" multiplier="174:212" id="DbD-2c-mA2"/>
+                            <constraint firstItem="nkO-D3-HCI" firstAttribute="centerX" secondItem="zRE-1E-2xt" secondAttribute="centerX" id="ZQ1-JH-ekU"/>
+                            <constraint firstItem="nkO-D3-HCI" firstAttribute="top" secondItem="zRE-1E-2xt" secondAttribute="top" constant="-50" id="ugF-Bv-VHD"/>
+                            <constraint firstItem="ly2-NQ-og7" firstAttribute="leading" secondItem="zRE-1E-2xt" secondAttribute="leading" constant="30" id="wx9-ww-Fzf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="30"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zRE-1E-2xt" secondAttribute="bottom" id="ENR-n2-FyF"/>
+                <constraint firstAttribute="trailing" secondItem="zRE-1E-2xt" secondAttribute="trailing" constant="5" id="Fcg-5w-6nP"/>
+                <constraint firstItem="zRE-1E-2xt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rwh-Bt-7UB"/>
+                <constraint firstItem="zRE-1E-2xt" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="51" id="tat-wZ-KMA"/>
+            </constraints>
+            <size key="customSize" width="454" height="399"/>
+            <point key="canvasLocation" x="430.43478260869568" y="9.0401785714285712"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="food" width="245" height="245"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

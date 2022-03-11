@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TypeCollectionViewCell" customModule="Food" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="81"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="81"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Foods" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIE-5x-nVm">
+                        <rect key="frame" x="0.0" y="5" width="455" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.61568627450980395" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iv4-BQ-h5T">
+                        <rect key="frame" x="0.0" y="31" width="455" height="3"/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.29019607843137252" blue="0.047058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="3" id="sjA-ql-G5s"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Iv4-BQ-h5T" secondAttribute="trailing" id="1R0-e5-dvr"/>
+                <constraint firstItem="rIE-5x-nVm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4ym-Zc-f6y"/>
+                <constraint firstItem="rIE-5x-nVm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="9bV-8u-YzP"/>
+                <constraint firstItem="Iv4-BQ-h5T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="l7D-Mu-1Mz"/>
+                <constraint firstAttribute="trailing" secondItem="rIE-5x-nVm" secondAttribute="trailing" id="rxK-lu-GaP"/>
+                <constraint firstItem="Iv4-BQ-h5T" firstAttribute="top" secondItem="rIE-5x-nVm" secondAttribute="bottom" constant="5" id="xoG-SL-oZT"/>
+            </constraints>
+            <size key="customSize" width="455" height="81"/>
+            <connections>
+                <outlet property="bottomView" destination="Iv4-BQ-h5T" id="TXq-GG-Rdz"/>
+                <outlet property="nameLbl" destination="rIE-5x-nVm" id="WMo-lp-oXl"/>
+            </connections>
+            <point key="canvasLocation" x="431.15942028985512" y="143.63839285714286"/>
+        </collectionViewCell>
+    </objects>
+</document>
