@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
 
         navigationController?.navigationBar.isHidden = true
+
     }
 
 
